@@ -16,7 +16,7 @@ def parse_cfg(cfgfile):
                 if block:
                     blocks.append(block)
                 block = dict()
-                block['type'] = line.lstrip("[").rstrip("]")
+                block["type"] = line.lstrip("[").rstrip("]")
                 # set default value
                 if block["type"] == "convolutional":
                     block["batch_normalize"] = 0
