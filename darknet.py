@@ -6,7 +6,7 @@ import torch.nn.functional as F
 from cfg import *
 from region_loss import RegionLoss
 
-#from layers.batchnorm.bn import BN2d
+# from layers.batchnorm.bn import BN2d
 
 
 class MaxPoolStride1(nn.Module):
@@ -169,7 +169,7 @@ class Darknet(nn.Module):
                         prev_filters, filters, kernel_size, stride, pad, bias=False))
                     model.add_module("bn{0}".format(
                         conv_id), nn.BatchNorm2d(filters))
-                    #model.add_module("bn{0}".format(conv_id), BN2d(filters))
+                    # model.add_module("bn{0}".format(conv_id), BN2d(filters))
                 else:
                     model.add_module("conv{0}".format(conv_id), nn.Conv2d(
                         prev_filters, filters, kernel_size, stride, pad))

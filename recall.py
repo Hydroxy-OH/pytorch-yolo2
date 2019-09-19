@@ -5,7 +5,7 @@ from utils import *
 
 
 def eval_list(cfgfile, weightfile, imglist):
-    #m = TinyYoloFace14Net()
+    # m = TinyYoloFace14Net()
     # m.eval()
     # m.load_darknet_weights(tiny_yolo_weight)
 
@@ -40,7 +40,7 @@ def eval_list(cfgfile, weightfile, imglist):
         lab_path = img_path.replace("images", "labels")
         lab_path = lab_path.replace("JPEGImages", "labels")
         lab_path = lab_path.replace(".jpg", ".txt").replace(".png", ".txt")
-        #truths = read_truths(lab_path)
+        # truths = read_truths(lab_path)
         truths = read_truths_args(lab_path, min_box_scale)
         # print(truths)
 

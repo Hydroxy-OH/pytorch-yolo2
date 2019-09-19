@@ -47,7 +47,7 @@ if __name__ == "__main__":
         cfgfile = sys.argv[1]
         weightfile = sys.argv[2]
         demo(cfgfile, weightfile)
-        #demo("cfg/tiny-yolo-voc.cfg", "tiny-yolo-voc.weights")
+        # demo("cfg/tiny-yolo-voc.cfg", "tiny-yolo-voc.weights")
     else:
         print("Usage:")
         print("    python demo.py cfgfile weightfile")

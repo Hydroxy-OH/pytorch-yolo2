@@ -161,7 +161,7 @@ def train(epoch):
 
         if use_cuda:
             data = data.cuda()
-            #target= target.cuda()
+            # target= target.cuda()
         t3 = time.time()
         data, target = Variable(data), Variable(target)
         t4 = time.time()

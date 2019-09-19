@@ -116,9 +116,9 @@ if __name__ == "__main__":
         weightfile = sys.argv[2]
         imgfile = sys.argv[3]
         detect(cfgfile, weightfile, imgfile)
-        #detect_cv2(cfgfile, weightfile, imgfile)
-        #detect_skimage(cfgfile, weightfile, imgfile)
+        # detect_cv2(cfgfile, weightfile, imgfile)
+        # detect_skimage(cfgfile, weightfile, imgfile)
     else:
         print("Usage: ")
         print("  python detect.py cfgfile weightfile imgfile")
-        #detect("cfg/tiny-yolo-voc.cfg", "tiny-yolo-voc.weights", "data/person.jpg", version=1)
+        # detect("cfg/tiny-yolo-voc.cfg", "tiny-yolo-voc.weights", "data/person.jpg", version=1)

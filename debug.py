@@ -19,11 +19,11 @@ labpath = imgpath.replace("images", "labels").replace(
 label = torch.zeros(50 * 5)
 if os.path.getsize(labpath):
     tmp = torch.from_numpy(np.loadtxt(labpath))
-    #tmp = torch.from_numpy(read_truths_args(labpath, 8.0/img.width))
-    #tmp = torch.from_numpy(read_truths(labpath))
+    # tmp = torch.from_numpy(read_truths_args(labpath, 8.0/img.width))
+    # tmp = torch.from_numpy(read_truths(labpath))
     tmp = tmp.view(-1)
     tsz = tmp.numel()
-    #print("labpath = %s , tsz = %d" % (labpath, tsz))
+    # print("labpath = %s , tsz = %d" % (labpath, tsz))
     if tsz > 50 * 5:
         label = tmp[0:50 * 5]
     elif tsz > 0:

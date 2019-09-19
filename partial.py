@@ -21,4 +21,4 @@ if __name__ == "__main__":
     else:
         print("Usage:")
         print("python partial.py cfgfile weightfile output cutoff")
-        #partial("cfg/tiny-yolo-voc.cfg", "tiny-yolo-voc.weights", "tiny-yolo-voc.conv.15", 15)
+        # partial("cfg/tiny-yolo-voc.cfg", "tiny-yolo-voc.weights", "tiny-yolo-voc.conv.15", 15)
