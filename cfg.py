@@ -29,10 +29,10 @@ def parse_cfg(cfgfile):
                 block[key] = value
             line = fp.readline()
 
-        if block:
-            blocks.append(block)
+    if block:
+        blocks.append(block)
 
-        return blocks
+    return blocks
 
 
 def print_cfg(blocks):
